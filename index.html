@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Consumo de Watts</title>
+</head>
+<body>
+  
+  <header>  
+    <h1>Calculadora de Consumo de Energia Elétrica</h1>
+  </header>
+
+  <div id="para">
+  <p>Calcule a energia gasta com os equipamentos da sua empresa ou residência. Digite a quantidade de Watts do seu aparelho e selecione a quantidade de horas e dias de consumo em um mês! </p>
+
+  <p>Esta calculadora de consumo de energia funciona de forma automática: através dela você poderá calcular consumo de energia online, calcular kwh/mes e também aprenderá a calcular o preço do preço kwh de modo fácil e rápido. A calculo de consumo de energia eletrica foi desenvolvida para permitir que facilmente sejam encontrados os valores de kWh gastos por mês em residências com base na potência dos equipamentos, horas de uso por dia e dias de uso por mês.</p>
+  </div>
+
+  <div id="cal">
+  <form>
+  <label for="potencia">POTÊNCIA APARELHO W</label>
+  <input type="number" name="potencia" id="potencia" placeholder="Digite o valor em Watts">
+  <p>Digite a potência/consumo em Watts do aparelho</p>
+  <label for="horas">TEMPO DE USO POR DIA</label>
+  <input type="number" name="horas" id="horas">
+  <p>Horas</p>
+  <label for="dias">DIAS DE USO</label>
+  <input type="number" name="dias" id="dias">
+  <p>Quantidade de dias de uso</p>
+  <label for="preço">PREÇO KWH (R$)</label>
+  <input type="number" name="preço" id="preço">
+  <p>Aprenda a encontrar o valor na imagem abaixo!
+  </p>
+  <input type="button" value="Calcular" id="btn-calcular"  onclick="calcular()">
+  <p id="res">Resultado</p>
+  
+  </form>
+</div>
+
+<div class="wtt">
+  <h2>Como calcular o valor do kWh</h2>
+
+  <h4>Cálculo do valor do kWh (Kilo Watt Hora)</h4>
+  <p>(1) Localize na sua conta de energia o seu consumo em kWh</p>
+  <p>(2) Divida o valor total da sua conta pelos kWh</p>
+  <p>(3) No exemplo ao lado: R$ 297,92 / 366kW = R$ 0.81</p>
+  <img src="img/download.jfif" alt="demonstrativo">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>
